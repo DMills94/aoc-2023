@@ -4,4 +4,4 @@
 
 Languages used:
 
-TypeScript
+JavaScript
