@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "repository": "git@github.com:DMills94/aoc-2023.git",
   "author": "dmills-roo <david.mills@deliveroo.co.uk>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
 }
