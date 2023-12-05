@@ -23,3 +23,9 @@ Otherwise pretty easy day with a moderately annoying input to parse
 Oh boy.
 
 Made so many silly mistakes today, first 'grid' style problem and was getting destroyed by end of lines. Pretty happy with the approach and implementation of a simplistic Part 2 but way too much time spent bothering friends to help debug! 🐛
+
+### Day 4
+
+A nice change of pace, both answers first time and only took about 30 minutes! 😁
+
+Was nice to utilise a common function to parse each card into an object, then a simple iteration over each to produce a solution. Good win!
