@@ -16,12 +16,20 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11
 const parseCard = (line) => {
   const [cardInfo, numbers] = line.split(": ");
   const [, id] = cardInfo.split(/\s+/);
-  const winningNums = numbers.split(" | ")[0].split(" ").filter(Boolean).map(num=>+num);
-  const cardNums = numbers.split(" | ")[1].split(" ").filter(Boolean).map(num=>+num);
+  const winningNums = numbers
+    .split(" | ")[0]
+    .split(" ")
+    .filter(Boolean)
+    .map((num) => +num);
+  const cardNums = numbers
+    .split(" | ")[1]
+    .split(" ")
+    .filter(Boolean)
+    .map((num) => +num);
   let matches = 0;
 
   for (const num of cardNums) {
-    if (winningNums.includes(num)) matches++
+    if (winningNums.includes(num)) matches++;
   }
 
   return {
@@ -35,7 +43,7 @@ const parseCard = (line) => {
 const sumScratchCards = (cards) => {
   let allCardsTotal = 0;
   cards.forEach((card) => {
-    const parsedCard = parseCard(card)
+    const parsedCard = parseCard(card);
     allCardsTotal += parsedCard.matches ? Math.pow(2, parsedCard.matches - 1) : 0;
   });
   return allCardsTotal;
@@ -49,21 +57,20 @@ console.log(`Input: ${sumScratchCards(input)}`);
 
 const countFinalCardTotals = (cards) => {
   const counts = {};
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const cardDetails = parseCard(card);
     counts[cardDetails.id] = 1;
-  })
+  });
 
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const cardDetails = parseCard(card);
-    for (let i = 0; i < cardDetails.matches ; i++) {
+    for (let i = 0; i < cardDetails.matches; i++) {
       counts[cardDetails.id + i + 1] += counts[cardDetails.id];
     }
-  })
-  
-  return sum(Object.values(counts));
+  });
 
-}
+  return sum(Object.values(counts));
+};
 
 console.log("Part 2");
 console.log(`Example: ${countFinalCardTotals(example)}`);
