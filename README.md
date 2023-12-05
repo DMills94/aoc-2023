@@ -29,3 +29,7 @@ Made so many silly mistakes today, first 'grid' style problem and was getting de
 A nice change of pace, both answers first time and only took about 30 minutes! 😁
 
 Was nice to utilise a common function to parse each card into an object, then a simple iteration over each to produce a solution. Good win!
+
+### Day 5
+
+Interesting day! Crazy input, ran out of JS memory multiple times but after a 23 minute runtime we got the right answer first try for Part 2 and i'm calling that a victory 🎉
