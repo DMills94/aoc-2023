@@ -37,3 +37,9 @@ Interesting day! Crazy input, ran out of JS memory multiple times but after a 23
 ### Day 6
 
 Took a bit of a break but we're back to it, with the easiest problem yet 🤔 atleast i optimised it a bit by exiting the loop when we stopped winning but I wonder what the smart solution was
+
+### Day 7
+
+POKER POKER POKER ♥️♣️♦️♠️
+
+Honestly, impressed how well I handled this one, logically. Happy with my ability to adapt Part 1 for Part 2 without having to rewrite everything. Fun day!

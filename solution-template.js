@@ -1,12 +1,10 @@
 const { fileToArray, exampleToArray } = require("../helpers/input.js");
 
 const input = fileToArray("./day/input.txt");
+const example = exampleToArray(`
+`);
 
 /** Part 1 */
-const example = exampleToArray(`
-Time:      7  15   30
-Distance:  9  40  200
-`);
 
 console.log("Part 1");
 // console.log(`Example: ${part1(example)}`);
