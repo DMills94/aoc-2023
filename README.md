@@ -33,3 +33,7 @@ Was nice to utilise a common function to parse each card into an object, then a 
 ### Day 5
 
 Interesting day! Crazy input, ran out of JS memory multiple times but after a 23 minute runtime we got the right answer first try for Part 2 and i'm calling that a victory 🎉
+
+### Day 6
+
+Took a bit of a break but we're back to it, with the easiest problem yet 🤔 atleast i optimised it a bit by exiting the loop when we stopped winning but I wonder what the smart solution was
